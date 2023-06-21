@@ -106,7 +106,9 @@ We now want to estimate a stepwise model. Stepwise means that we first estimate 
 
 ```{r}
 model1 <- lm(growth ~ treat, data = GrowthSW)
-model2 <- update(model1, . ~ . + control_variable1)
+model2 <- update(model1, . ~ . + rgdp60)
+model3 <- update(model2, . ~ . + tradeshare)
+model4 <- update(model3, . ~ . + education)
 ```
 
 Now, we put the models in a list, and see what `modelsummary` gives us:
