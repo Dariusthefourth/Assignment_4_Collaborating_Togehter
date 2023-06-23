@@ -69,7 +69,8 @@ summary_table <- GrowthSW |>
 print(summary_table)
 ```
 
-**Designated place**: type one or two sentences describing this table of a fellow student below. For example, comment on the mean and median growth of both groups. Then stage, commit and push it to their github repository. 
+**Designated place**: 
+#The table is segmented into two columns, one for "countries with >0 revolutions" and another "countries with 0 revolutions", the mean and median growth for countries with 0 revolutions is higher than that of the second group. This is also the case for rgdp60.  
 
 
 ### Part 3: Make a table summarizing reressions using modelsummary and kable
