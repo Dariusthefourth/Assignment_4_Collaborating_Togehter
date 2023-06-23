@@ -87,6 +87,7 @@ print(t.test)
 
 **Question 3.2**: What is the $p$-value of the test, and what does that mean? Write down your answer below.
 
+The p-value of the test is 0.06871, which means that there is a 6.87% chance of observing the observed difference in means between the "group_0" and "group_more_than_0" groups if the null hypothesis of no difference is true. Since the p-value is greater than the commonly used significance level of 0.05, we do not have strong evidence to conclude that the means of the two groups are significantly different.
 
 We can also control for other factors by including them in a linear model, for example:
 
@@ -122,6 +123,8 @@ list(model1, model2, model3, model4) |>
 **Question 3.5**: Edit the code chunk above to remove many statistics from the table, but keep only the number of observations $N$, and the $R^2$ statistic. 
 
 **Question 3.6**: According to this analysis, what is the main driver of economic growth? Why?
+
+The main driver of economic growth seems to be the variable "tradeshare" (option 4), which has a significant positive coefficient (2.233*) and contributes to explaining a substantial portion of the variation in economic growth (R2 = 0.318). This suggests that a higher level of trade share is associated with greater economic growth. 
 
 **Question 3.7**: In the code chunk below, edit the table such that the cells (including standard errors) corresponding to the variable `treat` have a red background and white text. Make sure to load the `kableExtra` library beforehand.
 
